@@ -1,5 +1,17 @@
 {
+  "name": "crafty-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js",
+    "create-db": "cd dynamodb && node createPeopleTable.js && cd ..",
+    "delete-db": "cd dynamodb && node deletePeopleTable.js && cd ..",
+    "load-data": "cd dynamodb && node loadPersonData.js && cd ..", 
+    "read-data": "cd dynamodb && node readDataTest.js && cd .."
+  },
   "dependencies": {
+    "aws-sdk": "^2.849.0",
+    "dynamodb-local": "^0.0.31",
     "eslint-config-airbnb": "^18.2.1",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
@@ -11,6 +23,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
+    "dynamodb-local": "^0.0.31",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1"
