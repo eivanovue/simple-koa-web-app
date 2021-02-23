@@ -1,0 +1,97 @@
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h2 class="masthead-brand">Simple Koa App</h2>
+    <nav class="nav nav-masthead justify-content-center">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link active" href="/features">Features</a>
+    </nav>
+  </div>
+</header>
+<div class="row"> 
+  <div class="col-6">
+    <div class="search mb-5">
+      <h4>
+        Search person by ID
+      </h4>
+      <div class="card card-body text-dark">
+        <form action="/person">
+          <div class="form-group mb-3">
+            <label for="id">Person ID</label>
+            <input type="text" class="form-control" id="id" name="id" aria-describedby="id"
+                    placeholder="Search by person ID" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="search mb-5">
+      <h4>
+        Search person by first name
+      </h4>
+      <div class="card card-body text-dark">
+        <form action="/people/search">
+          <div class="form-group mb-3">
+            <label for="first_name">Person first name</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" aria-describedby="firstName"
+                    placeholder="Search by person their first name" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="search mb-5">
+      <h4>
+        Search person by last name
+      </h4>
+      <div class="card card-body text-dark">
+        <form action="/people/search">
+          <div class="form-group mb-3">
+            <label for="last_name">Person last name</label>
+            <input type="text" class="form-control" id="id" name="last_name" aria-describedby="lastName"
+                    placeholder="Search by person their last name" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="search mb-5">
+      <h4>
+        Search person by email
+      </h4>
+      <div class="card card-body text-dark">
+        <form action="/people/search">
+          <div class="form-group mb-3">
+            <label for="email">Person email</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="email"
+                    placeholder="Search by person their email" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="search mb-5">
+      <h4>
+        Search person by gender
+      </h4>
+      <div class="card card-body text-dark">
+        <form action="/people/search">
+          <div class="form-group mb-3">
+            <label for="gender">Person gender</label>
+            <input type="text" class="form-control" id="gender" name="gender" aria-describedby="lastName"
+                    placeholder="Search by person their gender" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
